@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    font-family: "poppins", sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/photo-1464852045489-bccb7d17fe39.avif);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.backgroundcon{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.countdown-con{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: center ;
+    /* margin-top: 20%; */
+}
+
+.bigtext{
+    font-size: 6rem;
+    /* line-height: 1; */
+    margin: 0 5px;
+    font-weight: normal;
+}
+
+.countdown-el{
+    text-align: center;
+}
+
+.countdown-el span{
+    font-size: 20px;
+}
+
+.countdown-el span:last-child{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+  .bigtext{
+    font-size: 3rem;
+  }  
+
+  .backgroundcon{
+    font-size: 16px;
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    
+  }
+
+  .countdown-el span:last-child{
+    display: block;
+}
+
+    .countdown-el span:nth-child(2){
+    display: none;
+}
+}
